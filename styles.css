@@ -71,3 +71,19 @@
     align-content: center;
     text-align: center;
 }
+
+#quote {
+    text-align: center;
+
+}
+
+#footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background:rgb(255, 255, 255, .7);;
+    color: black;
+    text-align: center;
+ }

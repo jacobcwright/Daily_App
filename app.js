@@ -11,6 +11,19 @@
 //     },
 // });
 
+const url = "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1"
+var got = '';
+fetch(url)
+    .then(function(response) {
+        return response.json();
+    }).then(function(json) {
+        // console.log(json);
+        let results = "";
+        results += json[0].content + "<h3>" + "-" + json[0].title + "</h3";
+    document.getElementById("quote").innerHTML = results;
+    console.log(json);
+    });
+
 var app = new Vue({
     el: '#app',
     data: {
