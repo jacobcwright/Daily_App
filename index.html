@@ -1,0 +1,32 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Success Planner</title>
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body id="index">
+    <div id="app">
+        <form id="login" @submit.prevent="LoginGo">
+            <div id="box">
+                <h1 id="title"><u>Success Journal</u></h1>
+                <h1 id="titleLogin">Login</h1>
+                <input type="text" placeholder="Username" id="input">
+                </br>
+                <input type="password" placeholder="Password" id="inputPassword">
+                </br>
+                <button type="submit" id="btn">Login</button>
+            </div>
+        </form>
+    </div>
+    <a href="layout.html">Layout</a>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
